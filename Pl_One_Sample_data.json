@@ -1,0 +1,347 @@
+[
+    {
+      "instruction": "Declare a fixed binary variable",
+      "input": "",
+      "output": "DECLARE x FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a character string variable",
+      "input": "",
+      "output": "DECLARE name CHAR(20);"
+    },
+    {
+      "instruction": "Declare a decimal floating-point variable",
+      "input": "",
+      "output": "DECLARE price DECIMAL(7,2);"
+    },
+    {
+      "instruction": "Declare an array of integers",
+      "input": "",
+      "output": "DECLARE arr(10) FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a structure with integer and character fields",
+      "input": "",
+      "output": "DECLARE 1 person,\n    2 id FIXED BINARY(31),\n    2 name CHAR(20);"
+    },
+    {
+      "instruction": "Declare a pointer variable",
+      "input": "",
+      "output": "DECLARE p POINTER;"
+    },
+    {
+      "instruction": "Declare a variable as input",
+      "input": "",
+      "output": "DECLARE x INPUT;"
+    },
+    {
+      "instruction": "Declare a string with varying length",
+      "input": "",
+      "output": "DECLARE description CHAR VARYING(100);"
+    },
+    {
+      "instruction": "Declare a procedure",
+      "input": "",
+      "output": "PROCEDURE main;\n    DECLARE x FIXED BINARY(31);\n    DECLARE y CHAR(20);\n    /* procedure body */\nEND main;"
+    },
+    {
+      "instruction": "Declare a floating-point variable",
+      "input": "",
+      "output": "DECLARE rate FLOAT;"
+    },
+    {
+      "instruction": "Declare a constant variable",
+      "input": "",
+      "output": "DECLARE Pi FIXED DEC(5,2) INIT(3.14);"
+    },
+    {
+      "instruction": "Declare an array of character strings",
+      "input": "",
+      "output": "DECLARE names(5) CHAR(20);"
+    },
+    {
+      "instruction": "Declare a nested structure",
+      "input": "",
+      "output": "DECLARE 1 address,\n    2 street CHAR(50),\n    2 city CHAR(30),\n    2 zipcode FIXED BINARY(5);"
+    },
+    {
+      "instruction": "Declare a union",
+      "input": "",
+      "output": "DECLARE 1 data UNION,\n    2 int FIXED BINARY(31),\n    2 float FLOAT;"
+    },
+    {
+      "instruction": "Declare a static variable",
+      "input": "",
+      "output": "DECLARE count STATIC FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare an external procedure",
+      "input": "",
+      "output": "DECLARE EXTERNAL ENTRY 'externalProc';"
+    },
+    {
+      "instruction": "Declare an input-output file",
+      "input": "",
+      "output": "DECLARE file1 FILE RECORD INPUT OUTPUT;"
+    },
+    {
+      "instruction": "Declare an internal file",
+      "input": "",
+      "output": "DECLARE file2 FILE RECORD;"
+    },
+    {
+      "instruction": "Declare a controlled variable",
+      "input": "",
+      "output": "DECLARE i CONTROLLED FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a variable with initial value",
+      "input": "",
+      "output": "DECLARE counter FIXED BINARY(31) INIT(0);"
+    },
+    {
+      "instruction": "Declare a string variable with an initial value",
+      "input": "",
+      "output": "DECLARE message CHAR(50) INIT('Hello, World!');"
+    },
+    {
+      "instruction": "Declare a fixed decimal variable",
+      "input": "",
+      "output": "DECLARE amount FIXED DECIMAL(10,2);"
+    },
+    {
+      "instruction": "Declare a variable with a picture clause",
+      "input": "",
+      "output": "DECLARE phone CHAR(10) PICTURE '999-999-9999';"
+    },
+    {
+      "instruction": "Declare a label variable",
+      "input": "",
+      "output": "DECLARE start LABEL;"
+    },
+    {
+      "instruction": "Declare a based variable",
+      "input": "",
+      "output": "DECLARE p BASED; p = ADDR(x);"
+    },
+    {
+      "instruction": "Declare an automatic variable",
+      "input": "",
+      "output": "DECLARE total AUTOMATIC FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare an aligned variable",
+      "input": "",
+      "output": "DECLARE alignedVar ALIGNED FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a structure with varying length string",
+      "input": "",
+      "output": "DECLARE 1 employee,\n    2 id FIXED BINARY(31),\n    2 name CHAR VARYING(50);"
+    },
+    {
+      "instruction": "Declare a character variable initialized with null",
+      "input": "",
+      "output": "DECLARE nullChar CHAR(1) INIT('00'x);"
+    },
+    {
+      "instruction": "Declare a binary floating-point variable",
+      "input": "",
+      "output": "DECLARE value FLOAT BINARY;"
+    },
+    {
+      "instruction": "Declare a variable with dimension and bounds",
+      "input": "",
+      "output": "DECLARE matrix(1:10, 1:10) FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a variable as external",
+      "input": "",
+      "output": "DECLARE counter EXTERNAL FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a static constant",
+      "input": "",
+      "output": "DECLARE Pi STATIC FIXED DEC(5,2) INIT(3.14);"
+    },
+    {
+      "instruction": "Declare a procedure with parameters",
+      "input": "",
+      "output": "PROCEDURE add(a FIXED BINARY(31), b FIXED BINARY(31)) RETURNS(FIXED BINARY(31));\n    RETURN a + b;\nEND add;"
+    },
+    {
+      "instruction": "Declare a table with index",
+      "input": "",
+      "output": "DECLARE table(100) FIXED BINARY(31);\nDECLARE idx FIXED BINARY(31);\nDO idx = 1 TO 100;\n    table(idx) = idx * 2;\nEND;"
+    },
+    {
+      "instruction": "Declare a structure with nested arrays",
+      "input": "",
+      "output": "DECLARE 1 school,\n    2 classes(10),\n    3 students(30) CHAR(50);"
+    },
+    {
+      "instruction": "Declare a variable with alignment and initial value",
+      "input": "",
+      "output": "DECLARE value ALIGNED FIXED DECIMAL(10,2) INIT(100.00);"
+    },
+    {
+      "instruction": "Declare a based variable with initial address",
+      "input": "",
+      "output": "DECLARE p BASED INIT(ADDR(x));"
+    },
+    {
+      "instruction": "Declare a structure with varying array size",
+      "input": "",
+      "output": "DECLARE 1 department,\n    2 deptName CHAR(50),\n    2 employee(*) CHAR(50);"
+    },
+    {
+      "instruction": "Declare a variable with an initial value using hexadecimal",
+      "input": "",
+      "output": "DECLARE flag FIXED BINARY(31) INIT('0A'x);"
+    },
+    {
+      "instruction": "Declare an input-only file",
+      "input": "",
+      "output": "DECLARE fileIn FILE RECORD INPUT;"
+    },
+    {
+      "instruction": "Declare a structure with union",
+      "input": "",
+      "output": "DECLARE 1 record,\n    2 id FIXED BINARY(31),\n    2 info UNION,\n    3 name CHAR(20),\n    3 age FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a label and a goto statement",
+      "input": "",
+      "output": "DECLARE start LABEL;\n\nstart:\n    /* code */\n    GOTO start;"
+    },
+    {
+      "instruction": "Declare a parameter as varying length",
+      "input": "",
+      "output": "PROCEDURE processData(data CHAR VARYING(100));\n    /* procedure body */\nEND processData;"
+    },
+    {
+      "instruction": "Declare a controlled variable with initial value",
+      "input": "",
+      "output": "DECLARE i CONTROLLED FIXED BINARY(31) INIT(1);"
+    },
+    {
+      "instruction": "Declare a file with organization and access mode",
+      "input": "",
+      "output": "DECLARE dataFile FILE RECORD ORGANIZATION SEQUENTIAL ACCESS MODE SEQUENTIAL;"
+    },
+    {
+      "instruction": "Declare a constant character string",
+      "input": "",
+      "output": "DECLARE greeting CHAR(20) INIT('Hello');"
+    },
+    {
+      "instruction": "Declare an external variable",
+      "input": "",
+      "output": "DECLARE total EXTERNAL FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a parameterized structure",
+      "input": "",
+      "output": "DECLARE 1 person(n),\n    2 name CHAR(n),\n    2 age FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a file with keyed access",
+      "input": "",
+      "output": "DECLARE keyedFile FILE RECORD ORGANIZATION INDEXED ACCESS MODE DYNAMIC;"
+    },
+    {
+      "instruction": "Declare a static variable with initial value",
+      "input": "",
+      "output": "DECLARE counter STATIC FIXED BINARY(31) INIT(100);"
+    },
+    {
+      "instruction": "Declare a decimal variable with picture clause",
+      "input": "",
+      "output": "DECLARE salary DECIMAL(9,2) PICTURE '9999999.99';"
+    },
+    {
+      "instruction": "Declare a structure with static array",
+      "input": "",
+      "output": "DECLARE 1 company,\n    2 dept(5) CHAR(20);"
+    },
+    {
+      "instruction": "Declare a simple procedure to add two numbers",
+      "input": "",
+      "output": "PROCEDURE addTwoNumbers(a FIXED BINARY(31), b FIXED BINARY(31)) RETURNS(FIXED BINARY(31));\n    DECLARE sum FIXED BINARY(31);\n    sum = a + b;\n    RETURN sum;\nEND addTwoNumbers;"
+    },
+    {
+      "instruction": "Declare a procedure to calculate the factorial of a number",
+      "input": "",
+      "output": "PROCEDURE factorial(n FIXED BINARY(31)) RETURNS(FIXED BINARY(31));\n    DECLARE result FIXED BINARY(31) INIT(1);\n    DECLARE i FIXED BINARY(31);\n    DO i = 1 TO n;\n        result = result * i;\n    END;\n    RETURN result;\nEND factorial;"
+    },
+    {
+      "instruction": "Declare a structure with nested records",
+      "input": "",
+      "output": "DECLARE 1 student,\n    2 id FIXED BINARY(31),\n    2 name CHAR(50),\n    2 address,\n        3 street CHAR(50),\n        3 city CHAR(30),\n        3 zipcode FIXED BINARY(10);"
+    },
+    {
+      "instruction": "Declare a procedure to find the maximum of an array",
+      "input": "",
+      "output": "PROCEDURE findMax(arr() FIXED BINARY(31)) RETURNS(FIXED BINARY(31));\n    DECLARE max FIXED BINARY(31) INIT(arr(1));\n    DECLARE i FIXED BINARY(31);\n    DO i = 2 TO EXTENT(arr);\n        IF arr(i) > max THEN max = arr(i);\n    END;\n    RETURN max;\nEND findMax;"
+    },
+    {
+      "instruction": "Declare a file with sequential access mode",
+      "input": "",
+      "output": "DECLARE inputFile FILE RECORD INPUT;\nDECLARE line CHAR(100);\nOPEN FILE(inputFile);\nDO WHILE (NOT ENDFILE(inputFile));\n    READ FILE(inputFile) INTO(line);\n    PUT SKIP LIST(line);\nEND;\nCLOSE FILE(inputFile);"
+    },
+    {
+      "instruction": "Declare a structure with varying length arrays",
+      "input": "",
+      "output": "DECLARE 1 company,\n    2 name CHAR(50),\n    2 employees(*),\n        3 id FIXED BINARY(31),\n        3 name CHAR(50),\n        3 position CHAR(30);"
+    },
+    {
+      "instruction": "Declare a procedure to reverse a string",
+      "input": "",
+      "output": "PROCEDURE reverseString(input CHAR(100)) RETURNS(CHAR(100));\n    DECLARE output CHAR(100);\n    DECLARE i FIXED BINARY(31);\n    DO i = 1 TO LENGTH(input);\n        SUBSTR(output, i, 1) = SUBSTR(input, LENGTH(input) - i + 1, 1);\n    END;\n    RETURN output;\nEND reverseString;"
+    },
+    {
+      "instruction": "Declare a procedure to sort an array using bubble sort",
+      "input": "",
+      "output": "PROCEDURE bubbleSort(arr() FIXED BINARY(31));\n    DECLARE i, j FIXED BINARY(31);\n    DECLARE temp FIXED BINARY(31);\n    DO i = 1 TO EXTENT(arr) - 1;\n        DO j = 1 TO EXTENT(arr) - i;\n            IF arr(j) > arr(j+1) THEN DO;\n                temp = arr(j);\n                arr(j) = arr(j+1);\n                arr(j+1) = temp;\n            END;\n        END;\n    END;\nEND bubbleSort;"
+    },
+    {
+      "instruction": "Declare a nested structure with varying length strings",
+      "input": "",
+      "output": "DECLARE 1 department,\n    2 deptName CHAR(50),\n    2 employees(*),\n        3 empName CHAR VARYING(100),\n        3 empID FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a procedure to count vowels in a string",
+      "input": "",
+      "output": "PROCEDURE countVowels(input CHAR(100)) RETURNS(FIXED BINARY(31));\n    DECLARE count FIXED BINARY(31) INIT(0);\n    DECLARE i FIXED BINARY(31);\n    DO i = 1 TO LENGTH(input);\n        IF SUBSTR(input, i, 1) IN ('A', 'E', 'I', 'O', 'U', 'a', 'e', 'i', 'o', 'u') THEN\n            count = count + 1;\n    END;\n    RETURN count;\nEND countVowels;"
+    },
+    {
+      "instruction": "Declare a file with indexed access mode",
+      "input": "",
+      "output": "DECLARE dataFile FILE RECORD ORGANIZATION INDEXED ACCESS MODE DYNAMIC;\nDECLARE record CHAR(100);\nOPEN FILE(dataFile);\nLOCATE FILE(dataFile) KEY IS record;\nREAD FILE(dataFile) INTO(record);\nCLOSE FILE(dataFile);"
+    },
+    {
+      "instruction": "Declare a procedure to merge two sorted arrays",
+      "input": "",
+      "output": "PROCEDURE mergeArrays(arr1() FIXED BINARY(31), arr2() FIXED BINARY(31)) RETURNS(FIXED BINARY(31)(*));\n    DECLARE result(EXTENT(arr1) + EXTENT(arr2)) FIXED BINARY(31);\n    DECLARE i, j, k FIXED BINARY(31) INIT(1);\n    DO WHILE (i <= EXTENT(arr1) AND j <= EXTENT(arr2));\n        IF arr1(i) <= arr2(j) THEN\n            result(k) = arr1(i);\n            i = i + 1;\n        ELSE\n            result(k) = arr2(j);\n            j = j + 1;\n        k = k + 1;\n    END;\n    DO WHILE (i <= EXTENT(arr1));\n        result(k) = arr1(i);\n        i = i + 1;\n        k = k + 1;\n    END;\n    DO WHILE (j <= EXTENT(arr2));\n        result(k) = arr2(j);\n        j = j + 1;\n        k = k + 1;\n    END;\n    RETURN result;\nEND mergeArrays;"
+    },
+    {
+      "instruction": "Declare a procedure to convert a string to uppercase",
+      "input": "",
+      "output": "PROCEDURE toUpperCase(input CHAR(100)) RETURNS(CHAR(100));\n    DECLARE output CHAR(100);\n    DECLARE i FIXED BINARY(31);\n    DO i = 1 TO LENGTH(input);\n        IF SUBSTR(input, i, 1) IN ('a', 'z') THEN\n            SUBSTR(output, i, 1) = SUBSTR(input, i, 1) - 'a' + 'A';\n        ELSE\n            SUBSTR(output, i, 1) = SUBSTR(input, i, 1);\n    END;\n    RETURN output;\nEND toUpperCase;"
+    },
+    {
+      "instruction": "Declare a nested structure with varying length arrays and strings",
+      "input": "",
+      "output": "DECLARE 1 organization,\n    2 name CHAR(50),\n    2 departments(*),\n        3 deptName CHAR VARYING(100),\n        3 employees(*),\n            4 empName CHAR VARYING(100),\n            4 empID FIXED BINARY(31);"
+    },
+    {
+      "instruction": "Declare a procedure to perform matrix multiplication",
+      "input": "",
+      "output": "PROCEDURE matrixMultiply(a(,) FIXED BINARY(31), b(,) FIXED BINARY(31)) RETURNS(FIXED BINARY(31)(,));\n    DECLARE i, j, k FIXED BINARY(31);\n    DECLARE c(DIM(a,1), DIM(b,2)) FIXED BINARY(31) INIT(0);\n    DO i = 1 TO DIM(a,1);\n        DO j = 1 TO DIM(b,2);\n            DO k = 1 TO DIM(a,2);\n                c(i,j) = c(i,j) + a(i,k) * b(k,j);\n            END;\n        END;\n    END;\n    RETURN c;\nEND matrixMultiply;"
+    },
+    {
+      "instruction": "Declare a structure to represent a library system",
+      "input": "",
+      "output": "DECLARE 1 library,\n    2 books(*),\n        3 title CHAR(100),\n        3 author CHAR(50),\n        3 ISBN CHAR(13),\n    2 members(*),\n        3 name CHAR(50),\n        3 memberID FIXED BINARY(31);\n        3 borrowedBooks(*) CHAR(13);"
+    }
+  ]
