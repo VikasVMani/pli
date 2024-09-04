@@ -1,4 +1,4 @@
-instruction:  Declare a fixed binary variable 
+instruction:  How Declare a fixed binary variable in PL/1.
 
 input:   
 
@@ -6,7 +6,7 @@ output:
 
     DECLARE x FIXED BINARY(31); 
 
-instruction:  Declare a character string variable 
+instruction:  Declare a character string variable in PL/1.
 
 input:   
 
@@ -14,7 +14,7 @@ output:
 
     DECLARE name CHAR(20); 
 
-instruction:  Declare a decimal floating-point variable 
+instruction:  Declare a decimal floating-point variable in PL/1.
 
 input:   
 
@@ -22,7 +22,7 @@ output:
 
     DECLARE price DECIMAL(7,2); 
 
-instruction:  Declare an array of integers 
+instruction:  Declare an array of integers in PL/1.
 
 input:   
 
@@ -30,7 +30,7 @@ output:
 
     DECLARE arr(10) FIXED BINARY(31); 
 
-instruction:  Declare a structure with integer and character fields 
+instruction:  Declare a structure with integer and character fields in PL/1.
 
 input:   
 
@@ -40,7 +40,7 @@ output:
         2 id FIXED BINARY(31),
         2 name CHAR(20); 
 
-instruction:  Declare a pointer variable 
+instruction:  Declare a pointer variable in PL/1.
 
 input:   
 
@@ -48,7 +48,7 @@ output:
 
     DECLARE p POINTER; 
 
-instruction:  Declare a variable as input 
+instruction:  Declare a variable as input in PL/1.
 
 input:   
 
@@ -56,7 +56,7 @@ output:
 
     DECLARE x INPUT; 
 
-instruction:  Declare a string with varying length 
+instruction:  Declare a string with varying length in PL/1.
 
 input:   
 
@@ -64,7 +64,7 @@ output:
 
     DECLARE description CHAR VARYING(100); 
 
-instruction:  Declare a procedure 
+instruction:  Declare a procedure in PL/1.
 
 input:   
 
@@ -76,7 +76,7 @@ output:
         /* procedure body */
     END main; 
 
-instruction:  Declare a floating-point variable 
+instruction:  Declare a floating-point variable in PL/1.
 
 input:   
 
@@ -84,7 +84,7 @@ output:
 
     DECLARE rate FLOAT; 
 
-instruction:  Declare a constant variable 
+instruction:  Declare a constant variable in PL/1.
 
 input:   
 
@@ -92,7 +92,7 @@ output:
 
     DECLARE Pi FIXED DEC(5,2) INIT(3.14); 
 
-instruction:  Declare an array of character strings 
+instruction:  Declare an array of character strings in PL/1.
 
 input:   
 
@@ -100,7 +100,7 @@ output:
 
     DECLARE names(5) CHAR(20); 
 
-instruction:  Declare a nested structure 
+instruction:  Declare a nested structure in PL/1.
 
 input:   
 
@@ -111,7 +111,7 @@ output:
         2 city CHAR(30),
         2 zipcode FIXED BINARY(5); 
 
-instruction:  Declare a union 
+instruction:  Declare a union in PL/1.
 
 input:   
 
@@ -121,7 +121,7 @@ output:
         2 int FIXED BINARY(31),
         2 float FLOAT; 
 
-instruction:  Declare a static variable 
+instruction:  Declare a static variable in PL/1.
 
 input:   
 
@@ -129,7 +129,7 @@ output:
 
     DECLARE count STATIC FIXED BINARY(31); 
 
-instruction:  Declare an external procedure 
+instruction:  Declare an external procedure in PL/1.
 
 input:   
 
@@ -137,7 +137,7 @@ output:
 
     DECLARE EXTERNAL ENTRY 'externalProc'; 
 
-instruction:  Declare an input-output file 
+instruction:  Declare an input-output file in PL/1.
 
 input:   
 
@@ -145,7 +145,7 @@ output:
 
     DECLARE file1 FILE RECORD INPUT OUTPUT; 
 
-instruction:  Declare an internal file 
+instruction:  Declare an internal file in PL/1.
 
 input:   
 
@@ -153,7 +153,7 @@ output:
 
     DECLARE file2 FILE RECORD; 
 
-instruction:  Declare a controlled variable 
+instruction:  Declare a controlled variable in PL/1.
 
 input:   
 
@@ -161,7 +161,7 @@ output:
 
     DECLARE i CONTROLLED FIXED BINARY(31); 
 
-instruction:  Declare a variable with initial value 
+instruction:  Declare a variable with initial value in PL/1.
 
 input:   
 
@@ -169,7 +169,7 @@ output:
 
     DECLARE counter FIXED BINARY(31) INIT(0); 
 
-instruction:  Declare a string variable with an initial value 
+instruction:  Declare a string variable with an initial value in PL/1.
 
 input:   
 
@@ -177,7 +177,7 @@ output:
 
     DECLARE message CHAR(50) INIT('Hello, World!'); 
 
-instruction:  Declare a fixed decimal variable 
+instruction:  Declare a fixed decimal variable in PL/1.
 
 input:   
 
@@ -185,7 +185,7 @@ output:
 
     DECLARE amount FIXED DECIMAL(10,2); 
 
-instruction:  Declare a variable with a picture clause 
+instruction:  Declare a variable with a picture clause in PL/1.
 
 input:   
 
@@ -193,7 +193,7 @@ output:
 
     DECLARE phone CHAR(10) PICTURE '999-999-9999'; 
 
-instruction:  Declare a label variable 
+instruction:  Declare a label variable in PL/1.
 
 input:   
 
@@ -201,7 +201,7 @@ output:
 
     DECLARE start LABEL; 
 
-instruction:  Declare a based variable 
+instruction:  Declare a based variable in PL/1.
 
 input:   
 
@@ -209,7 +209,7 @@ output:
 
     DECLARE p BASED; p = ADDR(x); 
 
-instruction:  Declare an automatic variable 
+instruction:  Declare an automatic variable in PL/1.
 
 input:   
 
@@ -217,7 +217,7 @@ output:
 
     DECLARE total AUTOMATIC FIXED BINARY(31); 
 
-instruction:  Declare an aligned variable 
+instruction:  Declare an aligned variable in PL/1.
 
 input:   
 
@@ -225,7 +225,7 @@ output:
 
     DECLARE alignedVar ALIGNED FIXED BINARY(31); 
 
-instruction:  Declare a structure with varying length string 
+instruction:  Declare a structure with varying length string in PL/1.
 
 input:   
 
@@ -235,7 +235,7 @@ output:
         2 id FIXED BINARY(31),
         2 name CHAR VARYING(50); 
 
-instruction:  Declare a character variable initialized with null 
+instruction:  Declare a character variable initialized with null in PL/1.
 
 input:   
 
@@ -243,7 +243,7 @@ output:
 
     DECLARE nullChar CHAR(1) INIT('00'x); 
 
-instruction:  Declare a binary floating-point variable 
+instruction:  Declare a binary floating-point variable in PL/1.
 
 input:   
 
@@ -251,7 +251,7 @@ output:
 
     DECLARE value FLOAT BINARY; 
 
-instruction:  Declare a variable with dimension and bounds 
+instruction:  Declare a variable with dimension and bounds in PL/1.
 
 input:   
 
@@ -259,7 +259,7 @@ output:
 
     DECLARE matrix(1:10, 1:10) FIXED BINARY(31); 
 
-instruction:  Declare a variable as external 
+instruction:  Declare a variable as external in PL/1.
 
 input:   
 
@@ -267,7 +267,7 @@ output:
 
     DECLARE counter EXTERNAL FIXED BINARY(31); 
 
-instruction:  Declare a static constant 
+instruction:  Declare a static constant in PL/1.
 
 input:   
 
@@ -275,7 +275,7 @@ output:
 
     DECLARE Pi STATIC FIXED DEC(5,2) INIT(3.14); 
 
-instruction:  Declare a procedure with parameters 
+instruction:  Declare a procedure with parameters in PL/1.
 
 input:   
 
@@ -285,7 +285,7 @@ output:
         RETURN a + b;
     END add; 
 
-instruction:  Declare a table with index 
+instruction:  Declare a table with index in PL/1.
 
 input:   
 
@@ -297,7 +297,7 @@ output:
         table(idx) = idx * 2;
     END; 
 
-instruction:  Declare a structure with nested arrays 
+instruction:  Declare a structure with nested arrays in PL/1.
 
 input:   
 
@@ -307,7 +307,7 @@ output:
         2 classes(10),
         3 students(30) CHAR(50); 
 
-instruction:  Declare a variable with alignment and initial value 
+instruction:  Declare a variable with alignment and initial value in PL/1.
 
 input:   
 
@@ -315,7 +315,7 @@ output:
 
     DECLARE value ALIGNED FIXED DECIMAL(10,2) INIT(100.00); 
 
-instruction:  Declare a based variable with initial address 
+instruction:  Declare a based variable with initial address in PL/1.
 
 input:   
 
@@ -323,7 +323,7 @@ output:
 
     DECLARE p BASED INIT(ADDR(x)); 
 
-instruction:  Declare a structure with varying array size 
+instruction:  Declare a structure with varying array size in PL/1.
 
 input:   
 
@@ -333,7 +333,7 @@ output:
         2 deptName CHAR(50),
         2 employee(*) CHAR(50); 
 
-instruction:  Declare a variable with an initial value using hexadecimal 
+instruction:  Declare a variable with an initial value using hexadecimal in PL/1.
 
 input:   
 
@@ -341,7 +341,7 @@ output:
 
     DECLARE flag FIXED BINARY(31) INIT('0A'x); 
 
-instruction:  Declare an input-only file 
+instruction:  Declare an input-only file in PL/1.
 
 input:   
 
@@ -349,7 +349,7 @@ output:
 
     DECLARE fileIn FILE RECORD INPUT; 
 
-instruction:  Declare a structure with union 
+instruction:  Declare a structure with union in PL/1.
 
 input:   
 
@@ -361,7 +361,7 @@ output:
         3 name CHAR(20),
         3 age FIXED BINARY(31); 
 
-instruction:  Declare a label and a goto statement 
+instruction:  Declare a label and a goto statement in PL/1.
 
 input:   
 
@@ -373,7 +373,7 @@ output:
         /* code */
         GOTO start; 
 
-instruction:  Declare a parameter as varying length 
+instruction:  Declare a parameter as varying length in PL/1.
 
 input:   
 
@@ -383,7 +383,7 @@ output:
         /* procedure body */
     END processData; 
 
-instruction:  Declare a controlled variable with initial value 
+instruction:  Declare a controlled variable with initial value in PL/1.
 
 input:   
 
@@ -391,7 +391,7 @@ output:
 
     DECLARE i CONTROLLED FIXED BINARY(31) INIT(1); 
 
-instruction:  Declare a file with organization and access mode 
+instruction:  Declare a file with organization and access mode in PL/1.
 
 input:   
 
@@ -399,7 +399,7 @@ output:
 
     DECLARE dataFile FILE RECORD ORGANIZATION SEQUENTIAL ACCESS MODE SEQUENTIAL; 
 
-instruction:  Declare a constant character string 
+instruction:  Declare a constant character string in PL/1.
 
 input:   
 
@@ -407,7 +407,7 @@ output:
 
     DECLARE greeting CHAR(20) INIT('Hello'); 
 
-instruction:  Declare an external variable 
+instruction:  Declare an external variable in PL/1.
 
 input:   
 
@@ -415,7 +415,7 @@ output:
 
     DECLARE total EXTERNAL FIXED BINARY(31); 
 
-instruction:  Declare a parameterized structure 
+instruction:  Declare a parameterized structure in PL/1.
 
 input:   
 
@@ -425,7 +425,7 @@ output:
         2 name CHAR(n),
         2 age FIXED BINARY(31); 
 
-instruction:  Declare a file with keyed access 
+instruction:  Declare a file with keyed access in PL/1.
 
 input:   
 
@@ -433,7 +433,7 @@ output:
 
     DECLARE keyedFile FILE RECORD ORGANIZATION INDEXED ACCESS MODE DYNAMIC; 
 
-instruction:  Declare a static variable with initial value 
+instruction:  Declare a static variable with initial value in PL/1.
 
 input:   
 
@@ -441,7 +441,7 @@ output:
 
     DECLARE counter STATIC FIXED BINARY(31) INIT(100); 
 
-instruction:  Declare a decimal variable with picture clause 
+instruction:  Declare a decimal variable with picture clause in PL/1.
 
 input:   
 
@@ -449,7 +449,7 @@ output:
 
     DECLARE salary DECIMAL(9,2) PICTURE '9999999.99'; 
 
-instruction:  Declare a structure with static array 
+instruction:  Declare a structure with static array in PL/1.
 
 input:   
 
@@ -458,7 +458,7 @@ output:
     DECLARE 1 company,
         2 dept(5) CHAR(20); 
 
-instruction:  Declare a simple procedure to add two numbers 
+instruction:  Declare a simple procedure to add two numbers in PL/1.
 
 input:   
 
@@ -470,7 +470,7 @@ output:
         RETURN sum;
     END addTwoNumbers; 
 
-instruction:  Declare a procedure to calculate the factorial of a number 
+instruction:  Declare a procedure to calculate the factorial of a number in PL/1.
 
 input:   
 
@@ -485,7 +485,7 @@ output:
         RETURN result;
     END factorial; 
 
-instruction:  Declare a structure with nested records 
+instruction:  Declare a structure with nested records in PL/1.
 
 input:   
 
@@ -499,7 +499,7 @@ output:
             3 city CHAR(30),
             3 zipcode FIXED BINARY(10); 
 
-instruction:  Declare a procedure to find the maximum of an array 
+instruction:  Declare a procedure to find the maximum of an array in PL/1.
 
 input:   
 
@@ -514,7 +514,7 @@ output:
         RETURN max;
     END findMax; 
 
-instruction:  Declare a file with sequential access mode 
+instruction:  Declare a file with sequential access mode in PL/1.
 
 input:   
 
@@ -529,7 +529,7 @@ output:
     END;
     CLOSE FILE(inputFile); 
 
-instruction:  Declare a structure with varying length arrays 
+instruction:  Declare a structure with varying length arrays in PL/1.
 
 input:   
 
@@ -542,7 +542,7 @@ output:
             3 name CHAR(50),
             3 position CHAR(30); 
 
-instruction:  Declare a procedure to reverse a string 
+instruction:  Declare a procedure to reverse a string in PL/1.
 
 input:   
 
@@ -557,7 +557,7 @@ output:
         RETURN output;
     END reverseString; 
 
-instruction:  Declare a procedure to sort an array using bubble sort 
+instruction:  Declare a procedure to sort an array using bubble sort in PL/1.
 
 input:   
 
@@ -577,7 +577,7 @@ output:
         END;
     END bubbleSort; 
 
-instruction:  Declare a nested structure with varying length strings 
+instruction:  Declare a nested structure with varying length strings in PL/1.
 
 input:   
 
@@ -589,7 +589,7 @@ output:
             3 empName CHAR VARYING(100),
             3 empID FIXED BINARY(31); 
 
-instruction:  Declare a procedure to count vowels in a string 
+instruction:  Declare a procedure to count vowels in a string in PL/1.
 
 input:   
 
@@ -605,7 +605,7 @@ output:
         RETURN count;
     END countVowels; 
 
-instruction:  Declare a file with indexed access mode 
+instruction:  Declare a file with indexed access mode in PL/1.
 
 input:   
 
@@ -618,7 +618,7 @@ output:
     READ FILE(dataFile) INTO(record);
     CLOSE FILE(dataFile); 
 
-instruction:  Declare a procedure to merge two sorted arrays 
+instruction:  Declare a procedure to merge two sorted arrays in PL/1.
 
 input:   
 
@@ -649,7 +649,7 @@ output:
         RETURN result;
     END mergeArrays; 
 
-instruction:  Declare a procedure to convert a string to uppercase 
+instruction:  Declare a procedure to convert a string to uppercase in PL/1.
 
 input:   
 
@@ -667,7 +667,7 @@ output:
         RETURN output;
     END toUpperCase; 
 
-instruction:  Declare a nested structure with varying length arrays and strings 
+instruction:  Declare a nested structure with varying length arrays and strings in PL/1.
 
 input:   
 
@@ -681,7 +681,7 @@ output:
                 4 empName CHAR VARYING(100),
                 4 empID FIXED BINARY(31); 
 
-instruction:  Declare a procedure to perform matrix multiplication 
+instruction:  Declare a procedure to perform matrix multiplication in PL/1.
 
 input:   
 
@@ -700,7 +700,7 @@ output:
         RETURN c;
     END matrixMultiply; 
 
-instruction:  Declare a structure to represent a library system 
+instruction:  Declare a structure to represent a library system in PL/1.
 
 input:   
 
@@ -716,7 +716,7 @@ output:
             3 memberID FIXED BINARY(31);
             3 borrowedBooks(*) CHAR(13); 
 
-instruction: write a code to compute the largest of 3 float binary numbers x,y and z 
+instruction: write a code to compute the largest of 3 float binary numbers x,y and z in PL/1.
 
 input:  
 
@@ -755,7 +755,7 @@ output:
 
 
 
-instruction: write a code for compilation of demo using $N switch 
+instruction: write a code for compilation of demo using $N switch in PL/1.
 
 input:  
 
@@ -768,11 +768,11 @@ output:
             name character(20) varying;
         put skip(2) list('PLEASE ENTER YOUR FIRST NAME: ');
         get list(name);
-        put skip(2) list('HELLO '::name::', WELCOME TO PL/I'):
+        put skip(2) list('HELLO '::name::', WELCOME TO PL/1'):
     demo;
  
 
-instruction: write a polynomial evalution program 
+instruction: write a polynomial evalution program in PL/1.
 
 input:  
 
@@ -809,7 +809,7 @@ output:
 
  
 
-instruction: write a polynomial evalution program using fixed decimal 
+instruction: write a polynomial evalution program using fixed decimal in PL/1.
 
 input:  
 
@@ -843,14 +843,14 @@ output:
     end decpoly
  
 
-instruction: can you write a sample code for the optimist program? 
+instruction: can you write a sample code for the optimist programin PL/1? 
 
 input:  
 
 output:
 
     /**************************************************/
-    /* This program demonstrates PL/I character string*/
+    /* This program demonstrates PL/1 character string*/
     /* processing by turning a negative sentence into a */
     /* positive one. 								*/
     /***********************************************************/
@@ -897,7 +897,7 @@ output:
     end optimist;
  
 
-instruction: What is FSCAN program in PL/I? 
+instruction: What is FSCAN program in PL/1? 
 
 input:  
 
@@ -905,7 +905,7 @@ output:
 
     FSCAN demonstrates the embedded subroutine called GNT, Get Next Token, which parses an input line into separate items called tokens. Once you test GNT, you can extract it from this program and put it into a production program where required. 
 
-instruction: Write the FSCAN program in PL/I. 
+instruction: Write the FSCAN program in PL/1. 
 
 input:  
 
@@ -958,9 +958,8 @@ output:
             put edit('''' !! token !! '''') (x(1), a);
         end;
     end fscan;
-    The FSCAN program has three parts. The first part, lines 10 to 12, defines the global data area called token, used by the GNT procedure. The second part, lines 14 to 42, is the GNT procedure itself. The third part is the DO-group between lines 44 and 47 that performs the test of the GNT function procedure. 
-
-instruction: Write a PL/I program to read a sentence and reverse it. 
+    
+instruction: Write a PL/1 program to read a sentence and reverse it. 
 
 input:  
 
@@ -1021,7 +1020,7 @@ output:
 
     end reverse; 
 
-instruction: Write a NETWORK program in PL/I which consist of all the procedures like setup, connect, find, print_all, print_paths, print_route, shortest_distance and free all. 
+instruction: Write a NETWORK program in PL/1 which consist of all the procedures like setup, connect, find, print_all, print_paths, print_route, shortest_distance and free all. 
 
 input:  
 
@@ -1293,7 +1292,7 @@ output:
     end network;
     
 
-instruction: Write a PL/I program to fin the factorial of a number using iteration. 
+instruction: Write a PL/1 program to fin the factorial of a number using iteration. 
 
 input:  
 
@@ -1318,7 +1317,7 @@ output:
     end ifact;
  
 
-instruction: Write a PL/I program to fin the factorial of a number using recusrion. 
+instruction: Write a PL/1 program to fin the factorial of a number using recusrion. 
 
 input:  
 
@@ -1347,7 +1346,7 @@ output:
     end rfact;
  
 
-instruction: Write a PL/I program to fin the factorial of a number using recusrion and FIXED DECIMAL. 
+instruction: Write a PL/1 program to fin the factorial of a number using recusrion and FIXED DECIMAL. 
 
 input:  
 
@@ -1375,7 +1374,7 @@ output:
     end dfact;
  
 
-instruction: Write a PL/I program to fin the factorial of a number using recusrion and FLOAT BINARY. 
+instruction: Write a PL/1 program to fin the factorial of a number using recusrion and FLOAT BINARY. 
 
 input:  
 
@@ -1403,7 +1402,7 @@ output:
     end dfact;
  
 
-instruction: Write a PL/I program for the Ackermann function. 
+instruction: Write a PL/1 program for the Ackermann function. 
 
 input:  
 
@@ -1443,7 +1442,7 @@ output:
     end ack;
  
 
-instruction: Write an expression evaluation program in PL/I. 
+instruction: Write an expression evaluation program in PL/1. 
 
 input:  
 
@@ -1516,7 +1515,7 @@ output:
     end expression;
  
 
-instruction: Write an expression program in PL/I which consist of seperate tokens. 
+instruction: Write an expression program in PL/1 which consist of seperate tokens. 
 
 input:  
 
@@ -1616,7 +1615,7 @@ output:
     end expression;
  
 
-instruction: Write a PL/I program that illustrates ENTRY variables and constants. 
+instruction: Write a PL/1 program that illustrates ENTRY variables and constants. 
 
 input:  
 
@@ -1657,7 +1656,7 @@ output:
     end call;
  
 
-instruction: Write a PL/I program tha performs matrix conversion. 
+instruction: Write a PL/1 program tha performs matrix conversion. 
 
 input:  
 
@@ -1812,7 +1811,7 @@ output:
     end loan1
  
 
-instruction: Write a PL/I program for ANNUITY problem. 
+instruction: Write a PL/1 program for ANNUITY problem. 
 
 input:  
 
@@ -1896,7 +1895,7 @@ output:
 
  
 
-instruction: Write a PL/I program to compute a schedule of loan payments using elaborate analysis and display formats. 
+instruction: Write a PL/1 program to compute a schedule of loan payments using elaborate analysis and display formats. 
 
 input:  
 
@@ -2120,7 +2119,7 @@ output:
     end loan2;
 
 
-instruction: Write a PL/I program for depreciaition schedule including three different depreciation shcedules. 
+instruction: Write a PL/1 program for depreciaition schedule including three different depreciation shcedules. 
 
 input:  
 
@@ -2413,7 +2412,7 @@ output:
     end depreciate;
     
 
-instruction: Write a PL/I program to test an assembly routine to do floating-point division. 
+instruction: Write a PL/1 program to test an assembly routine to do floating-point division. 
 
 input:  
 
@@ -2437,7 +2436,7 @@ output:
     end dtest;
  
 
-instruction: Write a PL/I program to test an assembly routine called FDIV2 which returns a FLOAT BINARY value. 
+instruction: Write a PL/1 program to test an assembly routine called FDIV2 which returns a FLOAT BINARY value. 
 
 input:  
 
@@ -2460,7 +2459,7 @@ output:
     end fdtest;
  
 
-instruction: Write a PL/I program to test TOTWDS, MAXWDS and ALLWDS functions from the run-time subroutine library. 
+instruction: Write a PL/1 program to test TOTWDS, MAXWDS and ALLWDS functions from the run-time subroutine library. 
 
 input:  
 
@@ -2498,7 +2497,7 @@ output:
     end alltst;
     
 
-instruction: Write a program in PL/I to test the STKSIZ function while evaluating a RECURSIVE procedure. 
+instruction: Write a program in PL/1 to test the STKSIZ function while evaluating a RECURSIVE procedure. 
 
 input:  
 
@@ -2547,14 +2546,14 @@ output:
     end ack;
  
 
-instruction: Write a PL/I code which showcase the skeleton for parameter passing in PL/I. 
+instruction: Write a PL/1 code which showcase the skeleton for parameter passing in PL/1. 
 
 input:  
 
 output:
 
-    /*Below is a sample PL/I code which represents the skeleton of */
-    /*parameter passing in PL/I*/
+    /*Below is a sample PL/1 code which represents the skeleton of */
+    /*parameter passing in PL/1*/
     main:
         proceudre options(main);
         declare
@@ -2594,7 +2593,7 @@ output:
         end high_sub;
     end main; 
 
-instruction: Write an simple example of assignment statements in PL/I. 
+instruction: Write an simple example of assignment statements in PL/1. 
 
 input:  
 
@@ -2634,7 +2633,7 @@ output:
 
     end assign; 
 
-instruction: Show me and example of structures in PL/I. 
+instruction: Show me and example of structures in PL/1. 
 
 input:  
 
@@ -2761,7 +2760,7 @@ output:
         end output;
     end sample; 
 
-instruction: Write a program to copy one file into another file in PL/I language. 
+instruction: Write a program to copy one file into another file in PL/1 language. 
 
 input:  
 
@@ -2787,7 +2786,7 @@ output:
     end;
     end copy; 
 
-instruction: Write a PL/I  program to create a name and address file. 
+instruction: Write a PL/1  program to create a name and address file. 
 
 input:  
 
@@ -2846,7 +2845,7 @@ output:
         put file(output) skip;
     end create; 
 
-instruction: Write a PL/I program to read a name and addredd data file nad display the information on request. 
+instruction: Write a PL/1 program to read a name and addredd data file nad display the information on request. 
 
 input:  
 
@@ -2912,7 +2911,7 @@ output:
     end;
     end retrieve; 
 
-instruction: Write a PL/I program to construct a database of employee record using a structure declaration. 
+instruction: Write a PL/1 program to construct a database of employee record using a structure declaration. 
 
 input:  
 
@@ -3008,7 +3007,7 @@ output:
     end;
     end keyfile; 
 
-instruction: Write a program to retrieve and update records in an employee database in PL/I. 
+instruction: Write a program to retrieve and update records in an employee database in PL/1. 
 
 input:  
 
@@ -3082,7 +3081,7 @@ output:
     end;
     end update; 
 
-instruction: Write a PL/I program to read an employee's database and print a list of paychecks. 
+instruction: Write a PL/1 program to read an employee's database and print a list of paychecks. 
 
 input:  
 
@@ -3140,7 +3139,7 @@ output:
     end;
     end report; 
 
-instruction: write a PL/I program to shocase the concept of label constant and variables. 
+instruction: write a PL/1 program to shocase the concept of label constant and variables. 
 
 input:  
 
@@ -3187,7 +3186,7 @@ output:
         end P;
     end labels; 
 
-instruction: Write a PL/I program to shocase how PL/I executes ON and REVERT statements. 
+instruction: Write a PL/1 program to shocase how PL/1 executes ON and REVERT statements. 
 
 input:  
 
@@ -3195,7 +3194,7 @@ output:
 
     /*****************************************************/
     /* This program is nonfunctional, Its purpose is to */
-    /* illustrate how PL/I executes the ON and REVERT statements */
+    /* illustrate how PL/1 executes the ON and REVERT statements */
     /*****************************************************/
     auto_revert:
     procedure options (main);
@@ -3221,7 +3220,7 @@ output:
     end P; /* implicit REVERT supplied here */
     end auto_revert; 
 
-instruction: How can I copy my file to another file? Can you write a PL/I program for the same? 
+instruction: How can I copy my file to another file? Can you write a PL/1 program for the same? 
 
 input:  
 
@@ -3248,7 +3247,7 @@ output:
         end;
     end copy; 
 
-instruction: Write a PL/I program to evaluat apolynomial expression considering end-of-file condition. 
+instruction: Write a PL/1 program to evaluat apolynomial expression considering end-of-file condition. 
 
 input:  
 
@@ -3288,7 +3287,7 @@ output:
     end P;
     end fitpoly2; 
 
-instruction: Write a PL/I program tocopy a STREAM file on disk to a print file. 
+instruction: Write a PL/1 program tocopy a STREAM file on disk to a print file. 
 
 input:  
 
