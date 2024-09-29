@@ -1,4 +1,3 @@
-Example 1:
 
     入力:
     """
@@ -31,7 +30,6 @@ Example 1:
         WRITE FILE(DTOT01) FROM(OT01_HDR);
         U01_OT01CTR = U01_OT01CTR + K01_P1;
     """
-Example 2:
 
     入力:
     """
@@ -61,7 +59,6 @@ Example 2:
         END;
         CALL SUB9000;
     """
-Example 3:
 
     入力:
     """
@@ -286,7 +283,6 @@ Example 3:
     END PGM01;
     """
 
-Example 4:
 
     入力:
     """
@@ -311,7 +307,6 @@ Example 4:
             U01_IN01EOF = K01_C1;
         END;
     """
-Example 5:
 
     入力:
     """
@@ -363,7 +358,6 @@ Example 5:
         END;
     """
 
-Example 6:
 
     入力:
     """
@@ -420,7 +414,7 @@ Example 6:
         END;
         END;
     """
-Example 7:
+
 
     入力:
     """
@@ -484,7 +478,7 @@ Example 7:
         OT01_DAT.HENKBN = K01_C0;
         END;
     """
-Example 8:
+
 
     入力:
     """
@@ -513,7 +507,7 @@ Example 8:
         U01_MEICTR  = U01_MEICTR  + K01_P1;
         U01_OT01CTR = U01_OT01CTR + K01_P1;
     """
-Example 9:
+
 
     入力:
     """
@@ -533,7 +527,7 @@ Example 9:
     OPEN FILE(DTIN01),
             FILE(DTOT01);
     """
-Example 10:
+
 
     入力:
     """
@@ -625,7 +619,7 @@ Example 10:
             U01_OT01CTR         = U01_OT01CTR + 1;
         END;
     """
-Example 11:
+
 
     入力:
     """
@@ -647,7 +641,7 @@ Example 11:
     ON ENDFILE(DTIN01)        EOF_DTIN01 = K01_C1;
     """
 
-Example 12:
+
 
     入力:
     """
@@ -733,7 +727,7 @@ Example 12:
             FILE(DTOT01);
     END PGM03;
     """
-Example 13:
+
 
     入力:
     """
@@ -762,7 +756,7 @@ Example 13:
             FILE(DTOT01);
     """
 
-example 14:
+ 14:
 
     入力:
     """
