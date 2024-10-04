@@ -1,4 +1,4 @@
-Input:
+Instruction:
 
     Generate PLI according to the following process description.
 
@@ -20,6 +20,7 @@ Input:
     /* Fixed value P1 */
     DCL K01_P1                   FIXED DEC(1)  INIT (1);
 
+Input:  
 
 Output:
 
@@ -30,7 +31,7 @@ Output:
      U01_OT01CTR = U01_OT01CTR + K01_P1;
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -48,6 +49,8 @@ Input:
     DCL K01_C0                   CHAR(01)      INIT ('0'),
 
 
+Input:  
+
 Output:
 
      CALL SUB2000;
@@ -59,7 +62,7 @@ Output:
      CALL SUB9000;
 
 
-Input:
+instructions:
 
     Please write the following code in PL/I
 
@@ -126,6 +129,8 @@ Input:
     Number of inputs (U01_IN01CTR)
     Total number of outputs (U01_OT01CTR)
 
+
+Input:  
 
 Output:
 
@@ -283,7 +288,7 @@ Output:
     
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -299,6 +304,8 @@ Input:
     DCL K01_C1                   CHAR(01)      INIT ('1'),
 
 
+Input:  
+
 Output: 
 
    ON ENDFILE(DTIN01)
@@ -307,7 +314,7 @@ Output:
       END;
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -339,6 +346,8 @@ Input:
     /* Fixed value 2 */
     DCL K01_C2                   CHAR(01)      INIT ('2'),
 
+Input:  
+
 Output: 
 
     /* Edit output file details for some of the output file details */
@@ -356,7 +365,7 @@ Output:
     END;
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -395,6 +404,8 @@ Input:
 
 
 
+Input:  
+
 Output: 
 
     U01TAISYO = K01_C0;
@@ -413,7 +424,7 @@ Output:
     END;
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -458,6 +469,8 @@ Input:
     DCL K01_C1                   CHAR(01)      INIT ('1'),
 
 
+Input:  
+
 Output: 
 
     /* Edit output to output a portion of the output file details */
@@ -476,7 +489,7 @@ Output:
     END;
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -497,6 +510,8 @@ Input:
     DCL K01_P1                   FIXED DEC(1)  INIT(1);
 
 
+Input:  
+
 Output: 
 
     WRITE FILE(DTOT01) FROM(OT01_DAT);
@@ -504,7 +519,7 @@ Output:
     U01_OT01CTR = U01_OT01CTR + K01_P1;
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -516,6 +531,8 @@ Input:
     DCL DTOT01   FILE  RECORD OUTPUT;
 
 
+Input:  
+
 Output: 
 
     /* open file */
@@ -523,7 +540,7 @@ Output:
         FILE(DTOT01);
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -591,6 +608,8 @@ Input:
     DCL 3 DEPT_NAME         CHAR(30)      INIT(' ');
 
 
+Input:  
+
 Output:
 
     /* read first record */
@@ -614,7 +633,7 @@ Output:
         END;
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -629,11 +648,13 @@ Input:
     DCL K01_C1                   CHAR(01)      INIT ('1'),
 
 
+Input:  
+
 Output: 
 
    ON ENDFILE(DTIN01)        EOF_DTIN01 = K01_C1;
 
-Input:
+instructions:
 
     Write the following code in PL/I.
 
@@ -654,6 +675,8 @@ Input:
     Department name (DEPT_NAME)
     Department headcount (DEPT_COUNT)
 
+
+Input:  
 
 Output:
 
@@ -719,7 +742,7 @@ Output:
 
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -738,6 +761,8 @@ Input:
     DCL U01_OT01CTR           FIXED DEC(9)  INIT(0);
 
 
+Input:  
+
 Output: 
 
     PUT SKIP LIST ('*** INPUT  DTIN01  ='|| U01_IN01CTR ||' KEN ***');
@@ -746,7 +771,7 @@ Output:
             FILE(DTOT01);
 
 
-Input:
+instructions:
 
     Generate PLI according to the following process description.
 
@@ -774,6 +799,8 @@ Input:
     /* Fixed value P1 */
     DCL K01_P1                   FIXED DEC(1)  INIT (1);
 
+
+Input:  
 
 Output:
 
